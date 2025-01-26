@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Propertyoverview = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
   const places = [
     {
       imgSrc:
@@ -36,20 +38,10 @@ const Propertyoverview = () => {
     },
   ];
 
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const scrollInterval = setInterval(() => {
-      setScrollPosition((prev) => prev + 1);
-    }, 20); 
-
-    return () => clearInterval(scrollInterval); 
-  }, []);
-
   return (
-    <div className="bg-gray-50 ">
-      <div className=" mx-auto max-w-5xl px-4 mb-9">
-        <div className=" bg-gray-600 mb-9 text-white p-4 border-5 border-[#B9F0DB]">
+    <div className="bg-gray-50">
+      <div className="mx-auto max-w-5xl px-4 mb-9">
+        <div className="bg-gray-600 mb-9 text-white p-4 border-5 border-[#B9F0DB]">
           <p>Why DPS Sanctum?</p>
           <li>2 Min Away Railway Station</li>
           <li>Domestic Airport 3km</li>
@@ -73,14 +65,8 @@ const Propertyoverview = () => {
 
           <div className="bottomontent">
             <h3>Around This Project</h3>
-            <div className="imgContainer flex gap-9 overflow-x-auto bg-white p-7">
-              <div
-                className="flex flex-nowrap w-full"
-                style={{
-                  transform: `translateX(-${scrollPosition}px)`,
-                  transition: "transform 0.1s ease-in-out",
-                }}
-              >
+            <div className="imgContainer  flex gap-9 overflow-x-auto bg-white p-7">
+              <div className="flex flex-nowrap w-full">
                 {places.concat(places).map((place, index) => (
                   <div
                     key={index}

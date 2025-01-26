@@ -23,27 +23,6 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-6 text-white font-medium">
           <li className="relative group">
             <a
-              href="#about"
-              className="relative hover:text-black transition"
-            >
-              About
-              {/* Underline Animation */}
-              <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          </li>
-          <li className="relative group">
-            <a
-              href="#services"
-              className="relative hover:text-blue-500 transition"
-            >
-              Services
-              {/* Underline Animation */}
-              <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          </li>
-
-          <li className="relative group">
-            <a
               href="#contact"
               className="relative hover:text-blue-500 transition"
             >
@@ -68,7 +47,12 @@ const Navbar = () => {
           </li>
 
           <li className="relative group">
-            <a href="#enquire" className="hover:text-blue-500 transition">
+            <a
+              href="https://wa.me/9321696390"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
               Enquire
             </a>
             <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
@@ -103,14 +87,8 @@ const Navbar = () => {
       <div
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } md:hidden flex-col items-center bg-transparent shadow-md py-3 gap-4 text-gray-700 font-medium`}
+        } md:hidden flex-col items-center bg-transparent shadow-md py-3 gap-4 text-white font-medium`}
       >
-        <a href="#about" className="hover:text-blue-500 transition">
-          About
-        </a>
-        <a href="#services" className="hover:text-blue-500 transition">
-          Services
-        </a>
         <div className="relative group">
           <a
             href="#contact"
@@ -137,7 +115,12 @@ const Navbar = () => {
           </div>
         </div>
 
-        <a href="#enquire" className="hover:text-blue-500 transition">
+        <a
+          href="https://wa.me/9321696390"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-500 transition"
+        >
           Enquire
         </a>
       </div>

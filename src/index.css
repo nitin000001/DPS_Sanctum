@@ -8,3 +8,20 @@
     font-style: normal;
   }
   
+
+  .imgContainer::-webkit-scrollbar {
+    height: 7px;
+    border-bottom: 2px;
+    background-color: black;
+  }
+  
+  .imgContainer::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-image: linear-gradient(90deg, #4facfe, #00f2fe); /* Gradient color */
+    border-radius: 10px;
+  }
+  
+  .imgContainer::-webkit-scrollbar-track {
+    background-color: transparent; /* Optional: For track background */
+  }
+  

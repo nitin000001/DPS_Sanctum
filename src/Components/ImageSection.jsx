@@ -1,31 +1,54 @@
-import React from 'react'
+import React, { useState } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
-const ImageSection = () => {
+
+const ImageSlider = () => {
+  const images = [
+    "https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
-    <div className='mt-4 bg-[#615C57]/30 backdrop-blur-lg shadow-lg flex md:flex-row sm:flex-col '>
-        <div className="relative flex">
-          <img 
-            src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&w=600" 
-            alt="" 
-            className="w-full sm:w-auto sm:h-auto"
-          />
-          {/* Left and right blur effects */}
-          <div className="absolute inset-0 left-0 right-0 top-0 bottom-0 bg-gradient-to-r from-transparent to-[#000000]/40 sm:hidden"></div>
-        </div>
-        <div className="sm:mt-4">
-            <img 
-              src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=600"  
-              alt="second image"
-              className="w-full sm:w-auto sm:h-auto"
-            />
-            <img 
-              src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600"  
-              alt="third image"
-              className="w-full sm:w-auto sm:h-auto"
-            />
-        </div>
-    </div>
-  )
-}
+    <div className="relative flex items-center justify-center w-full h-[400px] bg-[#615C57]/30 backdrop-blur-lg shadow-lg">
+      {/* Left Arrow */}
+      <button
+        onClick={handlePrev}
+        className="absolute left-4 p-2 bg-gray-800/60 rounded-full hover:bg-gray-800 text-white"
+      >
+        <ChevronLeftIcon className="w-6 h-6" />
+      </button>
 
-export default ImageSection
+      {/* Image */}
+      <img
+        src={images[currentIndex]}
+        alt={`Slide ${currentIndex + 1}`}
+        className="w-full max-w-lg h-auto rounded-lg"
+      />
+
+      {/* Right Arrow */}
+      <button
+        onClick={handleNext}
+        className="absolute right-4 p-2 bg-gray-800/60 rounded-full hover:bg-gray-800 text-white"
+      >
+        <ChevronRightIcon className="w-6 h-6" />
+      </button>
+    </div>
+  );
+};
+
+export default ImageSlider;

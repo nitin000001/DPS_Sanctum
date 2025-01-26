@@ -4,7 +4,8 @@ import HeroSection from './Components/HeroSection'
 import PropertyContent from './Components/PropertyContent'
 import Propertyoverview from './Components/Propertyoverview'
 import DownloadBrochure from './Components/DownloadBrochure'
-// import CustomerForm from './Components/CustomerForm'
+import CustomerForm from './Components/CustomerForm'
+import Footer from './Components/Footer'
 
 
 const App = () => {
@@ -13,8 +14,10 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <PropertyContent />
-      <Propertyoverview />
       <DownloadBrochure />
+      <Propertyoverview />
+      <CustomerForm />
+      <Footer />
     </div>
   )
 }
