@@ -21,39 +21,29 @@ const Footer = () => {
         {/* Center Section */}
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-4">
-            <span>Vivek Propertywallah:</span>
+            <span>Contact Us:</span>
             <a href="tel:+917770017997" className="hover:text-white">
               +91 7770017997
             </a>
-            {/* <a href="tel:+917770017997" className="hover:text-white">
-              +91 7770017997
-            </a> */}
           </div>
-          {/* <a
-            href="https://www.sanctumin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm hover:text-white"
-          >
-            www.sanctuminfratech.com
-          </a> */}
+
           <div className="flex gap-4 mt-4">
             <a
-              href="https://www.instagram.com/sanctuminfratech"
+              href="https://www.instagram.com/propertywallah_"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>
             <a
-              href="https://twitter.com/SanctumRealty"
+              href="https://wa.me/7770017997"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaWhatsapp />
             </a>
             <a
-              href="https://www.youtube.com/@SanctumRealty"
+              href="https://www.youtube.com/c/propertywallah"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,19 +51,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        {/* Right Section */}
-        {/* <div className="space-y-2">
-          <p className="text-sm">
-            <span className="font-semibold">ARCHITECT:</span> Chirag Rayani
-          </p>
-          <p className="text-sm">
-            <span className="font-semibold">RCC CONSULTANT:</span> AVP Consultants
-          </p>
-          <p className="text-sm">
-            <span className="font-semibold">LEGAL ADVISOR:</span> Alok Singh
-          </p>
-        </div> */}
       </div>
 
       {/* Bottom Section */}
@@ -84,7 +61,7 @@ const Footer = () => {
         <a
           href="https://portfolio-indol-ten-94.vercel.app/"
           target="_blank"
-             rel="noopener noreferrer"
+          rel="noopener noreferrer"
           className="text-xs tracking-tight text-gray-400"
         >
           Design and Developed by Nitin Maurya

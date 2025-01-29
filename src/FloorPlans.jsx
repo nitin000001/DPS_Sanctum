@@ -1,16 +1,19 @@
-import floorPlan from "./assets/floorPlan.jpg";
+// import floorPlan from "./assets/floorPlan.jpg";
+// import masterLayout from "../assets/masterplan.jpg";
+import masterLayout from "./assets/masterplan.jpg"
 
 const FloorPlans = () => {
   return (
     <div className="max-w-5xl mx-auto p-6">
-      {/* Title */}
-      <h1 id="PricePlans" className="text-3xl font-extrabold mb-6">Price and Floor Plans</h1>
-        
       {/* Image Container */}
-      <div className="relative w-full">
+      <div
+        id="MasterLayout"
+        className="text-3xl font-extrabold mb-6 mt-9 scroll-mt-20" // Add scroll offset
+      >
+        <h1 className="mt-5 mb-5">Master Layout</h1>
         <img
-          src={floorPlan}
-          alt="Floor Plan"
+          src={masterLayout}
+          alt="Master Layout"
           className="w-full max-h-[700px] object-contain border rounded-lg shadow-md"
         />
       </div>

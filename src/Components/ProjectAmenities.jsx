@@ -1,10 +1,11 @@
 import React from "react";
 import aminities from "../assets/aminities.jpg";
 import aminities2 from "../assets/aminities2.jpg";
-import masterLayout from "../assets/masterplan.jpg";
+// import masterLayout from "../assets/masterplan.jpg";
 import legacy from "../assets/legacy.jpg";
 import flatLayout from "../assets/flatLayout.jpg";
 // import map from "../assets/map.jpg";
+import flatLayout1 from "../assets/flatLayout1.jpg";
 
 const ProjectAmenities = () => {
   return (
@@ -28,7 +29,7 @@ const ProjectAmenities = () => {
         />
       </div>
 
-      <div
+      {/* <div
         id="MasterLayout"
         className="text-3xl font-extrabold mb-6 mt-9 scroll-mt-20" // Add scroll offset
       >
@@ -38,6 +39,25 @@ const ProjectAmenities = () => {
           alt="Master Layout"
           className="w-full max-h-[700px] object-contain border rounded-lg shadow-md"
         />
+      </div> */}
+
+      <div
+        id="flatLayout"
+        className="text-3xl font-extrabold mb-6 mt-9 scroll-mt-20"
+      >
+        <h1 className="mt-5 mb-5">Flat Layout</h1>
+        <div className="imgContainer relative w-full flex overflow-x-auto">
+          <img
+            src={flatLayout1}
+            alt="aminities"
+            className="w-full max-h-[700px] object-contain border rounded-lg shadow-md"
+          />
+          <img
+            src={flatLayout}
+            alt="aminities"
+            className="w-full max-h-[700px] object-contain border rounded-lg shadow-md"
+          />
+        </div>
       </div>
 
       <div
@@ -51,27 +71,6 @@ const ProjectAmenities = () => {
           className="w-full max-h-[700px] object-contain border rounded-lg shadow-md"
         />
       </div>
-      <div
-        id="flatLayout"
-        className="text-3xl font-extrabold mb-6 mt-9 scroll-mt-20"
-      >
-        <h1 className="mt-5 mb-5">Flat Layout</h1>
-        <img
-          src={flatLayout}
-          alt="aminities"
-          className="w-full max-h-[700px] object-contain border rounded-lg shadow-md"
-        />
-      </div>
-      {/* <div
-        className="text-3xl font-extrabold mb-6 mt-9 scroll-mt-20"
-      >
-        <h1 className="mt-5 mb-5">DPS Sanctum on map</h1>
-        <img
-          src={map}
-          alt="aminities"
-          className="w-full max-h-[700px] object-contain border rounded-lg shadow-md"
-        />
-      </div> */}
     </div>
   );
 };

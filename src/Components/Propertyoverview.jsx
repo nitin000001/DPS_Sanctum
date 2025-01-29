@@ -8,7 +8,7 @@ const Propertyoverview = () => {
       imgSrc:
         "https://images.creativefabrica.com/products/previews/2024/03/26/zVSn0mu5G/2eFLKE5QtTP0Gub55MmWGewJs4J-mobile.jpg",
       category: "School",
-      name: "St.Blaise High School",
+      name: "St.Francis High School",
       time: "2 mins",
       distance: "(1.5km)",
     },
@@ -16,7 +16,7 @@ const Propertyoverview = () => {
       imgSrc:
         "https://images.creativefabrica.com/products/previews/2023/11/29/y6PHhbpYv/2Yqq90zN3cO6v8NtcOZEgYFoYrF-mobile.jpg",
       category: "Hospital",
-      name: "Lion Kartar Singh Hospital",
+      name: "Silver Line Hospital",
       time: "2 mins",
       distance: "(1.5km)",
     },
@@ -24,9 +24,9 @@ const Propertyoverview = () => {
       imgSrc:
         "https://images.creativefabrica.com/products/previews/2024/02/13/vqNNmEdbg/2cJnFeRNDTIo8YLqJJNnjnMiiEP-mobile.jpg",
       category: "Railway Station",
-      name: "Azad Nagar Metro Station",
+      name: "Dahisar Station",
       time: "2 mins",
-      distance: "(1.5km)",
+      distance: "(100m)",
     },
     {
       imgSrc:
@@ -56,9 +56,8 @@ const Propertyoverview = () => {
             />
             <div className="">
               <p>Property Location</p>
-              <p className="text-gray-600">
-                129, Jp Rd, Near Axis Bank Branch, Fish Market Area, Navneeth
-                Colony, Andheri West, Western Suburbs, Mumbai
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Laxminarayan CHSL, Mhatre Wadi , Dahisar West Mumbai 400068
               </p>
             </div>
           </div>

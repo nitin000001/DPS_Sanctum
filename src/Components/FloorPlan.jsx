@@ -32,6 +32,9 @@ export default function FloorPlan() {
   return (
     <div className="p-4 max-w-xl mx-auto">
       {/* <h1 className="text-xl font-semibold mb-4">Price & Floor Plan</h1> */}
+      <h1 id="PricePlans" className="text-3xl font-extrabold mb-6">
+        Price and Floor Plans
+      </h1>
       <div className="flex space-x-2 mb-4 ">
         <button
           className={`px-4 py-2 rounded-md border  ${
