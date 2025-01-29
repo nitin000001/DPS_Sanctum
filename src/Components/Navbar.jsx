@@ -23,6 +23,74 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-6 text-white font-medium">
           <li className="relative group">
             <a
+              href="#PricePlans"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Price & Plans
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="#amenities"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Amenities
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="#MasterLayout"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Master Layout
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="#projects"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Projects
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="#flatLayout"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Flat Layout
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="https://wa.me/9321696390"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Enquire
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          {/* Contact Us  */}
+          <li className="relative group">
+            <a
               href="#contact"
               className="relative hover:text-blue-500 transition"
             >
@@ -45,25 +113,13 @@ const Navbar = () => {
               </a>
             </div>
           </li>
-
-          <li className="relative group">
-            <a
-              href="https://wa.me/9321696390"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-500 transition"
-            >
-              Enquire
-            </a>
-            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-          </li>
         </ul>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="text-white focus:outline-none  "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +145,62 @@ const Navbar = () => {
           isMenuOpen ? "flex" : "hidden"
         } md:hidden flex-col items-center bg-transparent shadow-md py-3 gap-4 text-white font-medium`}
       >
-        <div className="relative group">
+        <div className="relative group flex flex-col gap-1 items-start">
+          <li className="relative group">
+            <a
+              href="#PricePlans"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Price & Plans
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="#amenities"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Amenities
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="#MasterLayout"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Master Layout
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="#projects"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Projects
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+
+          <li className="relative group">
+            <a
+              href="https://wa.me/9321696390"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition"
+            >
+              Enquire
+            </a>
+            <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
           <a
             href="#contact"
             className="relative hover:text-blue-500 transition"
@@ -114,15 +225,6 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-
-        <a
-          href="https://wa.me/9321696390"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-500 transition"
-        >
-          Enquire
-        </a>
       </div>
     </header>
   );

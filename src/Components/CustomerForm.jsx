@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const CustomerForm = () => {
   const [formData, setFormData] = useState({
     name: "",
+    mobile: "",
     message: "",
   });
 
@@ -13,24 +14,25 @@ const CustomerForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, message } = formData;
-    const user = `${name} wants to connect with you regarding property information`
+    const { name, mobile, message } = formData;
+    const user = `${name} wants to connect with you regarding property information`;
 
     // Construct WhatsApp URL
     const whatsappUrl = `https://wa.me/7770017997?text=${encodeURIComponent(
-      `${user}\n Name: ${name}\nMessage: ${message}`
+      `${user}\nName: ${name}\nMobile: ${mobile}\nMessage: ${message}`
     )}`;
 
     // Redirect to WhatsApp
     window.open(whatsappUrl, "_blank");
     setFormData({
       name: "",
+      mobile: "",
       message: "",
     });
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center p-9 justify-center sm:mt-[150px]">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
         <h2 className="text-2xl font-semibold text-center text-gray-700 mb-4">
           Get in touch
@@ -51,6 +53,25 @@ const CustomerForm = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Enter your name"
+              className="w-full px-4 py-2 mt-1 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              required
+            />
+          </div>
+          {/* Mobile Number */}
+          <div>
+            <label
+              htmlFor="mobile"
+              className="block text-sm font-medium text-gray-600"
+            >
+              Mobile Number
+            </label>
+            <input
+              type="number"
+              name="mobile"
+              id="mobile"
+              value={formData.mobile}
+              onChange={handleChange}
+              placeholder="Enter your mobile number"
               className="w-full px-4 py-2 mt-1 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
               required
             />

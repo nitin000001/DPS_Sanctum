@@ -10,18 +10,16 @@ const PropertyContent = () => {
           {/* Left Section */}
           <div className="flex-1 min-w-[250px]">
             <div className="flex items-center gap-2 mb-2">
-              <h1 className="text-2xl font-semibold">Naumi Shresht</h1>
+              <h1 className="text-2xl font-semibold">DPS Sanctum</h1>
               <span className="text-xs text-green-600 flex items-center gap-1">
                 <span>✔</span> RERA
               </span>
             </div>
             <p className="text-sm text-gray-700 mb-2">
-              By <span className="text-blue-700">DPS Developers</span>
+              By <span className="text-blue-700"> Sanctum Infratech Private Limited</span>
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
-              129, Jp Rd, Near Axis Bank Branch, Fish Market Area, Navneeth
-              Colony, Andheri West, Western Suburbs,
-              <br /> Mumbai
+            Laxminarayan CHSL, Mhatre Wadi , Dahisar West Mumbai 400068
             </p>
           </div>
 
@@ -29,21 +27,32 @@ const PropertyContent = () => {
           <div className="price flex-1 min-w-[250px] text-right">
             <p className="mb-2">
               <span className="text-2xl font-extrabold">
-                ₹1.26 Cr - 2.72 Cr |
+              ₹ 93.53 Lac - 1.59 Cr| 
               </span>{" "}
-              <span className="text-sm text-gray-900">₹30 K/sq.ft</span>
+              <span className="text-sm text-gray-900">24k/sq.ft</span>
             </p>
+            <p className="text-xs text-gray-700 mb-4">Govt taxes additional</p>
             <p className="text-blue-700 text-sm mb-1">EMI starts at ₹62.55 K</p>
-            <p className="text-xs text-gray-700 mb-4">Basic Price Onwards</p>
+            <div className="flex items-end gap-3 justify-end">
             <button className="bg-[#5E23DC] mt-4 mb-4 px-6 py-2 text-white text-sm rounded shadow hover:bg-[#4a1bba] transition">
               <a
                 href="https://wa.me/7770017997"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Get into touch
+                Get detailed pricing here
               </a>
             </button>
+            <button className="bg-[#5E23DC] mt-4 mb-4 px-6 py-2 text-white text-sm rounded shadow hover:bg-[#4a1bba] transition">
+              <a
+                href="https://wa.me/7770017997"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               Check all offers
+              </a>
+            </button>
+            </div>
           </div>
         </div>
         {/* image */}

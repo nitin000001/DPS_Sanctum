@@ -8,6 +8,9 @@
     font-style: normal;
   }
   
+  html,body{
+    scroll-behavior: smooth;
+  }
 
   .imgContainer::-webkit-scrollbar {
     height: 7px;
