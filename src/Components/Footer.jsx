@@ -1,5 +1,5 @@
 import React from "react";
-import { FaWhatsapp, FaInstagram, FaYoutube  } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,11 +7,14 @@ const Footer = () => {
       <div className="container mx-auto grid md:grid-cols-2 gap-4 px-4">
         {/* Left Section */}
         <div className="space-y-2">
-          <h5 className="text-sm font-semibold">MahaRERA Registration Number:</h5>
+          <h5 className="text-sm font-semibold">
+            MahaRERA Registration Number:
+          </h5>
           <p className="text-sm">PR/118000/24000063</p>
           <p className="text-xs text-gray-400 ">
-            Disclaimer: The plans, specifications, conceptual designs, visuals, amenities, and other details are strictly
-            for representation purposes only. T&C Apply.
+            Disclaimer: The plans, specifications, conceptual designs, visuals,
+            amenities, and other details are strictly for representation
+            purposes only. T&C Apply.
           </p>
         </div>
 
@@ -35,14 +38,26 @@ const Footer = () => {
             www.sanctuminfratech.com
           </a> */}
           <div className="flex gap-4 mt-4">
-            <a href="https://www.instagram.com/sanctuminfratech" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
+            <a
+              href="https://www.instagram.com/sanctuminfratech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
             </a>
-            <a href="https://twitter.com/SanctumRealty" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp />
+            <a
+              href="https://twitter.com/SanctumRealty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
             </a>
-            <a href="https://www.youtube.com/@SanctumRealty" target="_blank" rel="noopener noreferrer">
-            <FaYoutube />
+            <a
+              href="https://www.youtube.com/@SanctumRealty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube />
             </a>
           </div>
         </div>
@@ -63,9 +78,17 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-6 pt-4 text-center">
-     
-        <p className="text-sm text-gray-400">© 2025 Sanctum Infratech. All rights reserved.</p>
-        <p className="text-xs tracking-tight text-gray-400">Design and Developed by Nitin Maurya</p>
+        <p className="text-sm text-gray-400">
+          © 2025 Sanctum Infratech. All rights reserved.
+        </p>
+        <a
+          href="https://portfolio-indol-ten-94.vercel.app/"
+          target="_blank"
+             rel="noopener noreferrer"
+          className="text-xs tracking-tight text-gray-400"
+        >
+          Design and Developed by Nitin Maurya
+        </a>
       </div>
     </footer>
   );
