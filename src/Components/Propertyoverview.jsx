@@ -42,10 +42,10 @@ const Propertyoverview = () => {
     <div className="bg-gray-50">
       <div className="mx-auto max-w-5xl px-4 mb-9">
         <div className="bg-gray-600 mb-9 text-white p-4 border-5 border-[#B9F0DB]">
-          <p>Why DPS Sanctum?</p>
+          <p>Why Vasudev Garden?</p>
           <li>2 Min Away Railway Station</li>
           <li>Domestic Airport 3km</li>
-          <li>International Airport 3.5km</li>
+          <li>International Airport 30km</li>
         </div>
 
         <div className="container border-2 border-gray-300 p-5">

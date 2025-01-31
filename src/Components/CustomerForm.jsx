@@ -15,7 +15,7 @@ const CustomerForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, mobile, message } = formData;
-    const user = `${name} wants to connect with you regarding property information`;
+    const user = `${name} wants to connect with you regarding Vasudev Garden property information`;
 
     // Construct WhatsApp URL
     const whatsappUrl = `https://wa.me/7770017997?text=${encodeURIComponent(

@@ -56,7 +56,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-6 pt-4 text-center">
         <p className="text-sm text-gray-400">
-          © 2025 Sanctum Infratech. All rights reserved.
+          © 2025 Vasudev Garden. All rights reserved.
         </p>
         <a
           href="https://portfolio-indol-ten-94.vercel.app/"

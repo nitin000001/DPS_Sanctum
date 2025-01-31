@@ -11,13 +11,16 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 w-full  bg-[#615C57]/30 backdrop-blur-md shadow-md z-50">
       <nav className="container  mx-auto flex justify-between items-center px-4 ">
         {/* Logo Section */}
-        <div className="w-16 h-16 md:w-24 md:h-24">
+        {/* <div className="w-16 h-16 md:w-24 md:h-24">
           <img
             src="https://sanctuminfratech.com/wp-content/uploads/2023/12/1-1-1.png"
             alt="Logo"
             className="object-contain w-full h-full "
           />
-        </div>
+        </div> */}
+          <div className="p-5 text-white">
+          <h1>Vasudev Garden</h1>
+          </div>
 
         {/* Navigation Links */}
         <ul className="hidden md:flex gap-6 text-white font-medium">

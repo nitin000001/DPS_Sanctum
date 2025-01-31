@@ -10,13 +10,13 @@ const PropertyContent = () => {
           {/* Left Section */}
           <div className="flex-1 min-w-[250px]">
             <div className="flex items-center gap-2 mb-2">
-              <h1 className="text-2xl font-semibold">DPS Sanctum</h1>
+              <h1 className="text-2xl font-semibold">Vasudev Garden</h1>
               <span className="text-xs text-green-600 flex items-center gap-1">
                 <span>✔</span> RERA
               </span>
             </div>
             <p className="text-sm text-gray-700 mb-2">
-              By <span className="text-blue-700"> Sanctum Infratech Private Limited</span>
+              By <span className="text-blue-700"> Vasudev Garden Private Limited</span>
             </p>
             <p className="text-sm text-gray-700 leading-relaxed">
             Laxminarayan CHSL, Mhatre Wadi , Dahisar West Mumbai 400068
