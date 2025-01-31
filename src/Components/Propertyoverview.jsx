@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Propertyoverview = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // const [scrollPosition, setScrollPosition] = useState(0);
 
   const places = [
     {
@@ -34,7 +34,7 @@ const Propertyoverview = () => {
       category: "Airport",
       name: "Chhatrapati Shivaji Maharaj International Airport, Mumbai",
       time: "2 mins",
-      distance: "(1.5km)",
+      distance: "(15km)",
     },
   ];
 
@@ -42,7 +42,7 @@ const Propertyoverview = () => {
     <div className="bg-gray-50">
       <div className="mx-auto max-w-5xl px-4 mb-9">
         <div className="bg-gray-600 mb-9 text-white p-4 border-5 border-[#B9F0DB]">
-          <p>Why Vasudev Garden?</p>
+          <p>Why DPS Sanctum?</p>
           <li>2 Min Away Railway Station</li>
           <li>Domestic Airport 3km</li>
           <li>International Airport 30km</li>
